@@ -1,0 +1,1217 @@
+<html><head><meta charset='utf-8'><title>Optics clustering Report</title></head><body>
+<h1>Optics shlukování – Vývoj</h1>
+<h2>Generace 0</h2>
+<img src='images/scatter_gen_000.png' width='600'><br>
+<img src='images/histogram_gen_000.png' width='600'><br>
+<img src='images/boxplot_gen_000.png' width='600'><br>
+<h2>Generace 1</h2>
+<img src='images/scatter_gen_001.png' width='600'><br>
+<img src='images/histogram_gen_001.png' width='600'><br>
+<h3>Stabilita mezi generací 0 → 1:</h3>
+<pre>
+  Shluk 0 → 0: 16 jedinců (69.6 %)
+  Shluk 0 → -1: 6 jedinců (26.1 %)
+  Shluk 0 → 2: 1 jedinců (4.3 %)
+  Shluk 1 → -1: 11 jedinců (33.3 %)
+  Shluk 1 → 0: 17 jedinců (51.5 %)
+  Shluk 1 → 3: 5 jedinců (15.2 %)
+  Shluk -1 → -1: 26 jedinců (68.4 %)
+  Shluk -1 → 0: 12 jedinců (31.6 %)
+  Shluk 2 → 2: 5 jedinců (83.3 %)
+  Shluk 2 → 0: 1 jedinců (16.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 0 → 1</h3>
+<pre>
+ - Shluk 0 → 0 (Jaccard: 0.30, Overlap: 0.70)
+ - Shluk 1 → 0 (Jaccard: 0.27, Overlap: 0.52)
+ - Shluk 2 → 2 (Jaccard: 0.71, Overlap: 0.83)
+</pre>
+<h4>Posun centroidů mezi generací 0 → 1:</h4>
+<pre>
+ - Shluk 0: 3.1619
+ - Shluk 1: 7.4620
+ - Shluk 2: 10.2223
+</pre>
+<img src='images/boxplot_gen_001.png' width='600'><br>
+<h2>Generace 2</h2>
+<img src='images/scatter_gen_002.png' width='600'><br>
+<img src='images/histogram_gen_002.png' width='600'><br>
+<h3>Stabilita mezi generací 1 → 2:</h3>
+<pre>
+  Shluk 0 → -1: 45 jedinců (97.8 %)
+  Shluk 0 → 3: 1 jedinců (2.2 %)
+  Shluk -1 → -1: 43 jedinců (100.0 %)
+  Shluk 2 → -1: 6 jedinců (100.0 %)
+  Shluk 3 → 3: 4 jedinců (80.0 %)
+  Shluk 3 → -1: 1 jedinců (20.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 1 → 2</h3>
+<pre>
+ - Shluk 0 → 3 (Jaccard: 0.02, Overlap: 0.20)
+ - Shluk 2 → žádný vhodný přechod
+ - Shluk 3 → 3 (Jaccard: 0.67, Overlap: 0.80)
+</pre>
+<h4>Posun centroidů mezi generací 1 → 2:</h4>
+<pre>
+ - Shluk 0: 7.6110
+</pre>
+<img src='images/boxplot_gen_002.png' width='600'><br>
+<h2>Generace 3</h2>
+<img src='images/scatter_gen_003.png' width='600'><br>
+<img src='images/histogram_gen_003.png' width='600'><br>
+<h3>Stabilita mezi generací 2 → 3:</h3>
+<pre>
+  Shluk -1 → -1: 91 jedinců (95.8 %)
+  Shluk -1 → 3: 4 jedinců (4.2 %)
+  Shluk 3 → -1: 5 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 2 → 3</h3>
+<pre>
+ - Shluk 3 → žádný vhodný přechod
+</pre>
+<h4>Posun centroidů mezi generací 2 → 3:</h4>
+<pre>
+ - Shluk 0: 10.5858
+</pre>
+<img src='images/boxplot_gen_003.png' width='600'><br>
+<h2>Generace 4</h2>
+<img src='images/scatter_gen_004.png' width='600'><br>
+<img src='images/histogram_gen_004.png' width='600'><br>
+<h3>Stabilita mezi generací 3 → 4:</h3>
+<pre>
+  Shluk -1 → 4: 4 jedinců (4.2 %)
+  Shluk -1 → -1: 27 jedinců (28.1 %)
+  Shluk -1 → 3: 65 jedinců (67.7 %)
+  Shluk 3 → 3: 4 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 3 → 4</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.06, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 3 → 4:</h4>
+<pre>
+ - Shluk 0: 7.0821
+</pre>
+<img src='images/boxplot_gen_004.png' width='600'><br>
+<h2>Generace 5</h2>
+<img src='images/scatter_gen_005.png' width='600'><br>
+<img src='images/histogram_gen_005.png' width='600'><br>
+<h3>Stabilita mezi generací 4 → 5:</h3>
+<pre>
+  Shluk 4 → -1: 2 jedinců (50.0 %)
+  Shluk 4 → 3: 2 jedinců (50.0 %)
+  Shluk -1 → 3: 8 jedinců (29.6 %)
+  Shluk -1 → -1: 19 jedinců (70.4 %)
+  Shluk 3 → 3: 52 jedinců (75.4 %)
+  Shluk 3 → -1: 17 jedinců (24.6 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 4 → 5</h3>
+<pre>
+ - Shluk 4 → 3 (Jaccard: 0.03, Overlap: 0.50)
+ - Shluk 3 → 3 (Jaccard: 0.66, Overlap: 0.84)
+</pre>
+<h4>Posun centroidů mezi generací 4 → 5:</h4>
+<pre>
+ - Shluk 0: 6.0883
+</pre>
+<img src='images/boxplot_gen_005.png' width='600'><br>
+<h2>Generace 6</h2>
+<img src='images/scatter_gen_006.png' width='600'><br>
+<img src='images/histogram_gen_006.png' width='600'><br>
+<h3>Stabilita mezi generací 5 → 6:</h3>
+<pre>
+  Shluk -1 → -1: 12 jedinců (31.6 %)
+  Shluk -1 → 3: 26 jedinců (68.4 %)
+  Shluk 3 → 3: 60 jedinců (96.8 %)
+  Shluk 3 → -1: 2 jedinců (3.2 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 5 → 6</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.68, Overlap: 0.97)
+</pre>
+<h4>Posun centroidů mezi generací 5 → 6:</h4>
+<pre>
+ - Shluk 0: 0.7235
+</pre>
+<img src='images/boxplot_gen_006.png' width='600'><br>
+<h2>Generace 7</h2>
+<img src='images/scatter_gen_007.png' width='600'><br>
+<img src='images/histogram_gen_007.png' width='600'><br>
+<h3>Stabilita mezi generací 6 → 7:</h3>
+<pre>
+  Shluk -1 → -1: 10 jedinců (71.4 %)
+  Shluk -1 → 3: 4 jedinců (28.6 %)
+  Shluk 3 → 3: 63 jedinců (73.3 %)
+  Shluk 3 → -1: 23 jedinců (26.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 6 → 7</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.70, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 6 → 7:</h4>
+<pre>
+ - Shluk 0: 0.7732
+</pre>
+<img src='images/boxplot_gen_007.png' width='600'><br>
+<h2>Generace 8</h2>
+<img src='images/scatter_gen_008.png' width='600'><br>
+<img src='images/histogram_gen_008.png' width='600'><br>
+<h3>Stabilita mezi generací 7 → 8:</h3>
+<pre>
+  Shluk -1 → -1: 16 jedinců (48.5 %)
+  Shluk -1 → 3: 15 jedinců (45.5 %)
+  Shluk -1 → 5: 2 jedinců (6.1 %)
+  Shluk 3 → 3: 40 jedinců (59.7 %)
+  Shluk 3 → -1: 25 jedinců (37.3 %)
+  Shluk 3 → 5: 2 jedinců (3.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 7 → 8</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.49, Overlap: 0.73)
+</pre>
+<h4>Posun centroidů mezi generací 7 → 8:</h4>
+<pre>
+ - Shluk 0: 1.1476
+</pre>
+<img src='images/boxplot_gen_008.png' width='600'><br>
+<h2>Generace 9</h2>
+<img src='images/scatter_gen_009.png' width='600'><br>
+<img src='images/histogram_gen_009.png' width='600'><br>
+<h3>Stabilita mezi generací 8 → 9:</h3>
+<pre>
+  Shluk -1 → -1: 28 jedinců (68.3 %)
+  Shluk -1 → 3: 9 jedinců (22.0 %)
+  Shluk -1 → 5: 4 jedinců (9.8 %)
+  Shluk 3 → 3: 44 jedinců (80.0 %)
+  Shluk 3 → -1: 10 jedinců (18.2 %)
+  Shluk 3 → 5: 1 jedinců (1.8 %)
+  Shluk 5 → 5: 1 jedinců (25.0 %)
+  Shluk 5 → 3: 2 jedinců (50.0 %)
+  Shluk 5 → -1: 1 jedinců (25.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 8 → 9</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.67, Overlap: 0.80)
+ - Shluk 5 → 5 (Jaccard: 0.11, Overlap: 0.25)
+</pre>
+<h4>Posun centroidů mezi generací 8 → 9:</h4>
+<pre>
+ - Shluk 0: 0.6471
+ - Shluk 1: 5.4368
+</pre>
+<img src='images/boxplot_gen_009.png' width='600'><br>
+<h2>Generace 10</h2>
+<img src='images/scatter_gen_010.png' width='600'><br>
+<img src='images/histogram_gen_010.png' width='600'><br>
+<h3>Stabilita mezi generací 9 → 10:</h3>
+<pre>
+  Shluk -1 → -1: 38 jedinců (97.4 %)
+  Shluk -1 → 3: 1 jedinců (2.6 %)
+  Shluk 3 → -1: 52 jedinců (94.5 %)
+  Shluk 3 → 3: 3 jedinců (5.5 %)
+  Shluk 5 → -1: 6 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 9 → 10</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.05, Overlap: 0.75)
+ - Shluk 5 → žádný vhodný přechod
+</pre>
+<h4>Posun centroidů mezi generací 9 → 10:</h4>
+<pre>
+ - Shluk 0: 4.4668
+</pre>
+<img src='images/boxplot_gen_010.png' width='600'><br>
+<h2>Generace 11</h2>
+<img src='images/scatter_gen_011.png' width='600'><br>
+<img src='images/histogram_gen_011.png' width='600'><br>
+<h3>Stabilita mezi generací 10 → 11:</h3>
+<pre>
+  Shluk -1 → 3: 40 jedinců (41.7 %)
+  Shluk -1 → -1: 43 jedinců (44.8 %)
+  Shluk -1 → 6: 4 jedinců (4.2 %)
+  Shluk -1 → 7: 5 jedinců (5.2 %)
+  Shluk -1 → 8: 4 jedinců (4.2 %)
+  Shluk 3 → -1: 3 jedinců (75.0 %)
+  Shluk 3 → 3: 1 jedinců (25.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 10 → 11</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.02, Overlap: 0.25)
+</pre>
+<h4>Posun centroidů mezi generací 10 → 11:</h4>
+<pre>
+ - Shluk 0: 4.6493
+</pre>
+<img src='images/boxplot_gen_011.png' width='600'><br>
+<h2>Generace 12</h2>
+<img src='images/scatter_gen_012.png' width='600'><br>
+<img src='images/histogram_gen_012.png' width='600'><br>
+<h3>Stabilita mezi generací 11 → 12:</h3>
+<pre>
+  Shluk 3 → 3: 41 jedinců (100.0 %)
+  Shluk -1 → -1: 15 jedinců (32.6 %)
+  Shluk -1 → 3: 31 jedinců (67.4 %)
+  Shluk 6 → 3: 4 jedinců (100.0 %)
+  Shluk 7 → 3: 5 jedinců (100.0 %)
+  Shluk 8 → 3: 4 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 11 → 12</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.48, Overlap: 1.00)
+ - Shluk 6 → 3 (Jaccard: 0.05, Overlap: 1.00)
+ - Shluk 7 → 3 (Jaccard: 0.06, Overlap: 1.00)
+ - Shluk 8 → 3 (Jaccard: 0.05, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 11 → 12:</h4>
+<pre>
+ - Shluk 0: 1.5717
+</pre>
+<img src='images/boxplot_gen_012.png' width='600'><br>
+<h2>Generace 13</h2>
+<img src='images/scatter_gen_013.png' width='600'><br>
+<img src='images/histogram_gen_013.png' width='600'><br>
+<h3>Stabilita mezi generací 12 → 13:</h3>
+<pre>
+  Shluk 3 → 3: 33 jedinců (38.8 %)
+  Shluk 3 → -1: 30 jedinců (35.3 %)
+  Shluk 3 → 9: 8 jedinců (9.4 %)
+  Shluk 3 → 10: 6 jedinců (7.1 %)
+  Shluk 3 → 11: 8 jedinců (9.4 %)
+  Shluk -1 → 9: 1 jedinců (6.7 %)
+  Shluk -1 → -1: 11 jedinců (73.3 %)
+  Shluk -1 → 11: 2 jedinců (13.3 %)
+  Shluk -1 → 10: 1 jedinců (6.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 12 → 13</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.39, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 12 → 13:</h4>
+<pre>
+ - Shluk 0: 1.1026
+</pre>
+<img src='images/boxplot_gen_013.png' width='600'><br>
+<h2>Generace 14</h2>
+<img src='images/scatter_gen_014.png' width='600'><br>
+<img src='images/histogram_gen_014.png' width='600'><br>
+<h3>Stabilita mezi generací 13 → 14:</h3>
+<pre>
+  Shluk 3 → 3: 33 jedinců (100.0 %)
+  Shluk -1 → 3: 26 jedinců (63.4 %)
+  Shluk -1 → -1: 15 jedinců (36.6 %)
+  Shluk 9 → 3: 8 jedinců (88.9 %)
+  Shluk 9 → -1: 1 jedinců (11.1 %)
+  Shluk 10 → 3: 7 jedinců (100.0 %)
+  Shluk 11 → 3: 9 jedinců (90.0 %)
+  Shluk 11 → -1: 1 jedinců (10.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 13 → 14</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.40, Overlap: 1.00)
+ - Shluk 9 → 3 (Jaccard: 0.10, Overlap: 0.89)
+ - Shluk 10 → 3 (Jaccard: 0.08, Overlap: 1.00)
+ - Shluk 11 → 3 (Jaccard: 0.11, Overlap: 0.90)
+</pre>
+<h4>Posun centroidů mezi generací 13 → 14:</h4>
+<pre>
+ - Shluk 0: 0.9084
+</pre>
+<img src='images/boxplot_gen_014.png' width='600'><br>
+<h2>Generace 15</h2>
+<img src='images/scatter_gen_015.png' width='600'><br>
+<img src='images/histogram_gen_015.png' width='600'><br>
+<h3>Stabilita mezi generací 14 → 15:</h3>
+<pre>
+  Shluk 3 → -1: 19 jedinců (22.9 %)
+  Shluk 3 → 3: 64 jedinců (77.1 %)
+  Shluk -1 → -1: 13 jedinců (76.5 %)
+  Shluk -1 → 3: 4 jedinců (23.5 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 14 → 15</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.74, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 14 → 15:</h4>
+<pre>
+ - Shluk 0: 0.5532
+</pre>
+<img src='images/boxplot_gen_015.png' width='600'><br>
+<h2>Generace 16</h2>
+<img src='images/scatter_gen_016.png' width='600'><br>
+<img src='images/histogram_gen_016.png' width='600'><br>
+<h3>Stabilita mezi generací 15 → 16:</h3>
+<pre>
+  Shluk -1 → -1: 23 jedinců (71.9 %)
+  Shluk -1 → 13: 3 jedinců (9.4 %)
+  Shluk -1 → 14: 2 jedinců (6.2 %)
+  Shluk -1 → 18: 2 jedinců (6.2 %)
+  Shluk -1 → 3: 1 jedinců (3.1 %)
+  Shluk -1 → 15: 1 jedinců (3.1 %)
+  Shluk 3 → 12: 6 jedinců (8.8 %)
+  Shluk 3 → 3: 17 jedinců (25.0 %)
+  Shluk 3 → -1: 20 jedinců (29.4 %)
+  Shluk 3 → 15: 4 jedinců (5.9 %)
+  Shluk 3 → 16: 4 jedinců (5.9 %)
+  Shluk 3 → 14: 8 jedinců (11.8 %)
+  Shluk 3 → 17: 5 jedinců (7.4 %)
+  Shluk 3 → 18: 2 jedinců (2.9 %)
+  Shluk 3 → 13: 2 jedinců (2.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 15 → 16</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.25, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 15 → 16:</h4>
+<pre>
+ - Shluk 0: 2.6223
+</pre>
+<img src='images/boxplot_gen_016.png' width='600'><br>
+<h2>Generace 17</h2>
+<img src='images/scatter_gen_017.png' width='600'><br>
+<img src='images/histogram_gen_017.png' width='600'><br>
+<h3>Stabilita mezi generací 16 → 17:</h3>
+<pre>
+  Shluk -1 → -1: 15 jedinců (34.9 %)
+  Shluk -1 → 3: 28 jedinců (65.1 %)
+  Shluk 12 → 3: 6 jedinců (100.0 %)
+  Shluk 3 → 3: 18 jedinců (100.0 %)
+  Shluk 13 → 3: 5 jedinců (100.0 %)
+  Shluk 14 → 3: 8 jedinců (80.0 %)
+  Shluk 14 → -1: 2 jedinců (20.0 %)
+  Shluk 15 → 3: 5 jedinců (100.0 %)
+  Shluk 16 → 3: 4 jedinců (100.0 %)
+  Shluk 17 → 3: 5 jedinců (100.0 %)
+  Shluk 18 → 3: 4 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 16 → 17</h3>
+<pre>
+ - Shluk 12 → 3 (Jaccard: 0.07, Overlap: 1.00)
+ - Shluk 3 → 3 (Jaccard: 0.22, Overlap: 1.00)
+ - Shluk 13 → 3 (Jaccard: 0.06, Overlap: 1.00)
+ - Shluk 14 → 3 (Jaccard: 0.09, Overlap: 0.80)
+ - Shluk 15 → 3 (Jaccard: 0.06, Overlap: 1.00)
+ - Shluk 16 → 3 (Jaccard: 0.05, Overlap: 1.00)
+ - Shluk 17 → 3 (Jaccard: 0.06, Overlap: 1.00)
+ - Shluk 18 → 3 (Jaccard: 0.05, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 16 → 17:</h4>
+<pre>
+ - Shluk 0: 2.0888
+</pre>
+<img src='images/boxplot_gen_017.png' width='600'><br>
+<h2>Generace 18</h2>
+<img src='images/scatter_gen_018.png' width='600'><br>
+<img src='images/histogram_gen_018.png' width='600'><br>
+<h3>Stabilita mezi generací 17 → 18:</h3>
+<pre>
+  Shluk -1 → 3: 8 jedinců (47.1 %)
+  Shluk -1 → -1: 9 jedinců (52.9 %)
+  Shluk 3 → 3: 77 jedinců (92.8 %)
+  Shluk 3 → -1: 6 jedinců (7.2 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 17 → 18</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.85, Overlap: 0.93)
+</pre>
+<h4>Posun centroidů mezi generací 17 → 18:</h4>
+<pre>
+ - Shluk 0: 0.3229
+</pre>
+<img src='images/boxplot_gen_018.png' width='600'><br>
+<h2>Generace 19</h2>
+<img src='images/scatter_gen_019.png' width='600'><br>
+<img src='images/histogram_gen_019.png' width='600'><br>
+<h3>Stabilita mezi generací 18 → 19:</h3>
+<pre>
+  Shluk 3 → 3: 85 jedinců (100.0 %)
+  Shluk -1 → -1: 7 jedinců (46.7 %)
+  Shluk -1 → 3: 8 jedinců (53.3 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 18 → 19</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.91, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 18 → 19:</h4>
+<pre>
+ - Shluk 0: 0.3474
+</pre>
+<img src='images/boxplot_gen_019.png' width='600'><br>
+<h2>Generace 20</h2>
+<img src='images/scatter_gen_020.png' width='600'><br>
+<img src='images/histogram_gen_020.png' width='600'><br>
+<h3>Stabilita mezi generací 19 → 20:</h3>
+<pre>
+  Shluk 3 → -1: 24 jedinců (25.8 %)
+  Shluk 3 → 3: 69 jedinců (74.2 %)
+  Shluk -1 → -1: 4 jedinců (57.1 %)
+  Shluk -1 → 3: 3 jedinců (42.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 19 → 20</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.72, Overlap: 0.96)
+</pre>
+<h4>Posun centroidů mezi generací 19 → 20:</h4>
+<pre>
+ - Shluk 0: 0.2992
+</pre>
+<img src='images/boxplot_gen_020.png' width='600'><br>
+<h2>Generace 21</h2>
+<img src='images/scatter_gen_021.png' width='600'><br>
+<img src='images/histogram_gen_021.png' width='600'><br>
+<h3>Stabilita mezi generací 20 → 21:</h3>
+<pre>
+  Shluk -1 → -1: 14 jedinců (50.0 %)
+  Shluk -1 → 3: 14 jedinců (50.0 %)
+  Shluk 3 → 3: 67 jedinců (93.1 %)
+  Shluk 3 → -1: 5 jedinců (6.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 20 → 21</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.78, Overlap: 0.93)
+</pre>
+<h4>Posun centroidů mezi generací 20 → 21:</h4>
+<pre>
+ - Shluk 0: 0.2755
+</pre>
+<img src='images/boxplot_gen_021.png' width='600'><br>
+<h2>Generace 22</h2>
+<img src='images/scatter_gen_022.png' width='600'><br>
+<img src='images/histogram_gen_022.png' width='600'><br>
+<h3>Stabilita mezi generací 21 → 22:</h3>
+<pre>
+  Shluk -1 → 3: 16 jedinců (84.2 %)
+  Shluk -1 → -1: 3 jedinců (15.8 %)
+  Shluk 3 → 3: 81 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 21 → 22</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.84, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 21 → 22:</h4>
+<pre>
+ - Shluk 0: 0.2860
+</pre>
+<img src='images/boxplot_gen_022.png' width='600'><br>
+<h2>Generace 23</h2>
+<img src='images/scatter_gen_023.png' width='600'><br>
+<img src='images/histogram_gen_023.png' width='600'><br>
+<h3>Stabilita mezi generací 22 → 23:</h3>
+<pre>
+  Shluk 3 → -1: 93 jedinců (95.9 %)
+  Shluk 3 → 3: 4 jedinců (4.1 %)
+  Shluk -1 → -1: 3 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 22 → 23</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.04, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 22 → 23:</h4>
+<pre>
+ - Shluk 0: 2.1083
+</pre>
+<img src='images/boxplot_gen_023.png' width='600'><br>
+<h2>Generace 24</h2>
+<img src='images/scatter_gen_024.png' width='600'><br>
+<img src='images/histogram_gen_024.png' width='600'><br>
+<h3>Stabilita mezi generací 23 → 24:</h3>
+<pre>
+  Shluk -1 → -1: 39 jedinců (40.6 %)
+  Shluk -1 → 3: 57 jedinců (59.4 %)
+  Shluk 3 → 3: 4 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 23 → 24</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.07, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 23 → 24:</h4>
+<pre>
+ - Shluk 0: 2.1413
+</pre>
+<img src='images/boxplot_gen_024.png' width='600'><br>
+<h2>Generace 25</h2>
+<img src='images/scatter_gen_025.png' width='600'><br>
+<img src='images/histogram_gen_025.png' width='600'><br>
+<h3>Stabilita mezi generací 24 → 25:</h3>
+<pre>
+  Shluk -1 → 3: 17 jedinců (43.6 %)
+  Shluk -1 → -1: 22 jedinců (56.4 %)
+  Shluk 3 → 3: 61 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 24 → 25</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.78, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 24 → 25:</h4>
+<pre>
+ - Shluk 0: 0.2794
+</pre>
+<img src='images/boxplot_gen_025.png' width='600'><br>
+<h2>Generace 26</h2>
+<img src='images/scatter_gen_026.png' width='600'><br>
+<img src='images/histogram_gen_026.png' width='600'><br>
+<h3>Stabilita mezi generací 25 → 26:</h3>
+<pre>
+  Shluk 3 → 3: 71 jedinců (91.0 %)
+  Shluk 3 → -1: 7 jedinců (9.0 %)
+  Shluk -1 → -1: 11 jedinců (50.0 %)
+  Shluk -1 → 3: 11 jedinců (50.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 25 → 26</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.80, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 25 → 26:</h4>
+<pre>
+ - Shluk 0: 0.1816
+</pre>
+<img src='images/boxplot_gen_026.png' width='600'><br>
+<h2>Generace 27</h2>
+<img src='images/scatter_gen_027.png' width='600'><br>
+<img src='images/histogram_gen_027.png' width='600'><br>
+<h3>Stabilita mezi generací 26 → 27:</h3>
+<pre>
+  Shluk 3 → 3: 69 jedinců (84.1 %)
+  Shluk 3 → -1: 13 jedinců (15.9 %)
+  Shluk -1 → -1: 12 jedinců (66.7 %)
+  Shluk -1 → 3: 6 jedinců (33.3 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 26 → 27</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.78, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 26 → 27:</h4>
+<pre>
+ - Shluk 0: 0.2044
+</pre>
+<img src='images/boxplot_gen_027.png' width='600'><br>
+<h2>Generace 28</h2>
+<img src='images/scatter_gen_028.png' width='600'><br>
+<img src='images/histogram_gen_028.png' width='600'><br>
+<h3>Stabilita mezi generací 27 → 28:</h3>
+<pre>
+  Shluk 3 → -1: 29 jedinců (38.7 %)
+  Shluk 3 → 3: 46 jedinců (61.3 %)
+  Shluk -1 → -1: 20 jedinců (80.0 %)
+  Shluk -1 → 3: 5 jedinců (20.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 27 → 28</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.57, Overlap: 0.90)
+</pre>
+<h4>Posun centroidů mezi generací 27 → 28:</h4>
+<pre>
+ - Shluk 0: 0.4833
+</pre>
+<img src='images/boxplot_gen_028.png' width='600'><br>
+<h2>Generace 29</h2>
+<img src='images/scatter_gen_029.png' width='600'><br>
+<img src='images/histogram_gen_029.png' width='600'><br>
+<h3>Stabilita mezi generací 28 → 29:</h3>
+<pre>
+  Shluk -1 → -1: 23 jedinců (46.9 %)
+  Shluk -1 → 3: 26 jedinců (53.1 %)
+  Shluk 3 → 3: 48 jedinců (94.1 %)
+  Shluk 3 → -1: 3 jedinců (5.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 28 → 29</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.62, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 28 → 29:</h4>
+<pre>
+ - Shluk 0: 0.4284
+</pre>
+<img src='images/boxplot_gen_029.png' width='600'><br>
+<h2>Generace 30</h2>
+<img src='images/scatter_gen_030.png' width='600'><br>
+<img src='images/histogram_gen_030.png' width='600'><br>
+<h3>Stabilita mezi generací 29 → 30:</h3>
+<pre>
+  Shluk -1 → -1: 21 jedinců (80.8 %)
+  Shluk -1 → 3: 5 jedinců (19.2 %)
+  Shluk 3 → 3: 49 jedinců (66.2 %)
+  Shluk 3 → -1: 20 jedinců (27.0 %)
+  Shluk 3 → 19: 5 jedinců (6.8 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 29 → 30</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.62, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 29 → 30:</h4>
+<pre>
+ - Shluk 0: 0.3277
+</pre>
+<img src='images/boxplot_gen_030.png' width='600'><br>
+<h2>Generace 31</h2>
+<img src='images/scatter_gen_031.png' width='600'><br>
+<img src='images/histogram_gen_031.png' width='600'><br>
+<h3>Stabilita mezi generací 30 → 31:</h3>
+<pre>
+  Shluk -1 → -1: 20 jedinců (48.8 %)
+  Shluk -1 → 3: 21 jedinců (51.2 %)
+  Shluk 3 → 3: 52 jedinců (96.3 %)
+  Shluk 3 → -1: 2 jedinců (3.7 %)
+  Shluk 19 → 3: 5 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 30 → 31</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.65, Overlap: 0.96)
+ - Shluk 19 → 3 (Jaccard: 0.06, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 30 → 31:</h4>
+<pre>
+ - Shluk 0: 0.4822
+</pre>
+<img src='images/boxplot_gen_031.png' width='600'><br>
+<h2>Generace 32</h2>
+<img src='images/scatter_gen_032.png' width='600'><br>
+<img src='images/histogram_gen_032.png' width='600'><br>
+<h3>Stabilita mezi generací 31 → 32:</h3>
+<pre>
+  Shluk -1 → 3: 16 jedinců (72.7 %)
+  Shluk -1 → -1: 6 jedinců (27.3 %)
+  Shluk 3 → 3: 69 jedinců (88.5 %)
+  Shluk 3 → -1: 9 jedinců (11.5 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 31 → 32</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.73, Overlap: 0.88)
+</pre>
+<h4>Posun centroidů mezi generací 31 → 32:</h4>
+<pre>
+ - Shluk 0: 0.2392
+</pre>
+<img src='images/boxplot_gen_032.png' width='600'><br>
+<h2>Generace 33</h2>
+<img src='images/scatter_gen_033.png' width='600'><br>
+<img src='images/histogram_gen_033.png' width='600'><br>
+<h3>Stabilita mezi generací 32 → 33:</h3>
+<pre>
+  Shluk 3 → 3: 77 jedinců (90.6 %)
+  Shluk 3 → -1: 8 jedinců (9.4 %)
+  Shluk -1 → -1: 6 jedinců (40.0 %)
+  Shluk -1 → 3: 9 jedinců (60.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 32 → 33</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.82, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 32 → 33:</h4>
+<pre>
+ - Shluk 0: 0.1639
+</pre>
+<img src='images/boxplot_gen_033.png' width='600'><br>
+<h2>Generace 34</h2>
+<img src='images/scatter_gen_034.png' width='600'><br>
+<img src='images/histogram_gen_034.png' width='600'><br>
+<h3>Stabilita mezi generací 33 → 34:</h3>
+<pre>
+  Shluk 3 → 3: 74 jedinců (86.0 %)
+  Shluk 3 → -1: 12 jedinců (14.0 %)
+  Shluk -1 → -1: 7 jedinců (50.0 %)
+  Shluk -1 → 3: 7 jedinců (50.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 33 → 34</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.80, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 33 → 34:</h4>
+<pre>
+ - Shluk 0: 0.1132
+</pre>
+<img src='images/boxplot_gen_034.png' width='600'><br>
+<h2>Generace 35</h2>
+<img src='images/scatter_gen_035.png' width='600'><br>
+<img src='images/histogram_gen_035.png' width='600'><br>
+<h3>Stabilita mezi generací 34 → 35:</h3>
+<pre>
+  Shluk 3 → 3: 73 jedinců (90.1 %)
+  Shluk 3 → -1: 8 jedinců (9.9 %)
+  Shluk -1 → -1: 13 jedinců (68.4 %)
+  Shluk -1 → 3: 6 jedinců (31.6 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 34 → 35</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.84, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 34 → 35:</h4>
+<pre>
+ - Shluk 0: 0.1370
+</pre>
+<img src='images/boxplot_gen_035.png' width='600'><br>
+<h2>Generace 36</h2>
+<img src='images/scatter_gen_036.png' width='600'><br>
+<img src='images/histogram_gen_036.png' width='600'><br>
+<h3>Stabilita mezi generací 35 → 36:</h3>
+<pre>
+  Shluk 3 → 3: 76 jedinců (96.2 %)
+  Shluk 3 → -1: 3 jedinců (3.8 %)
+  Shluk -1 → 3: 12 jedinců (57.1 %)
+  Shluk -1 → -1: 9 jedinců (42.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 35 → 36</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.84, Overlap: 0.96)
+</pre>
+<h4>Posun centroidů mezi generací 35 → 36:</h4>
+<pre>
+ - Shluk 0: 0.1586
+</pre>
+<img src='images/boxplot_gen_036.png' width='600'><br>
+<h2>Generace 37</h2>
+<img src='images/scatter_gen_037.png' width='600'><br>
+<img src='images/histogram_gen_037.png' width='600'><br>
+<h3>Stabilita mezi generací 36 → 37:</h3>
+<pre>
+  Shluk 3 → 3: 66 jedinců (75.0 %)
+  Shluk 3 → -1: 22 jedinců (25.0 %)
+  Shluk -1 → -1: 5 jedinců (41.7 %)
+  Shluk -1 → 3: 7 jedinců (58.3 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 36 → 37</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.69, Overlap: 0.90)
+</pre>
+<h4>Posun centroidů mezi generací 36 → 37:</h4>
+<pre>
+ - Shluk 0: 0.1177
+</pre>
+<img src='images/boxplot_gen_037.png' width='600'><br>
+<h2>Generace 38</h2>
+<img src='images/scatter_gen_038.png' width='600'><br>
+<img src='images/histogram_gen_038.png' width='600'><br>
+<h3>Stabilita mezi generací 37 → 38:</h3>
+<pre>
+  Shluk 3 → 3: 59 jedinců (80.8 %)
+  Shluk 3 → -1: 14 jedinců (19.2 %)
+  Shluk -1 → -1: 12 jedinců (44.4 %)
+  Shluk -1 → 3: 15 jedinců (55.6 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 37 → 38</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.67, Overlap: 0.81)
+</pre>
+<h4>Posun centroidů mezi generací 37 → 38:</h4>
+<pre>
+ - Shluk 0: 0.1711
+</pre>
+<img src='images/boxplot_gen_038.png' width='600'><br>
+<h2>Generace 39</h2>
+<img src='images/scatter_gen_039.png' width='600'><br>
+<img src='images/histogram_gen_039.png' width='600'><br>
+<h3>Stabilita mezi generací 38 → 39:</h3>
+<pre>
+  Shluk 3 → 3: 64 jedinců (86.5 %)
+  Shluk 3 → -1: 10 jedinců (13.5 %)
+  Shluk -1 → -1: 11 jedinců (42.3 %)
+  Shluk -1 → 3: 15 jedinců (57.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 38 → 39</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.72, Overlap: 0.86)
+</pre>
+<h4>Posun centroidů mezi generací 38 → 39:</h4>
+<pre>
+ - Shluk 0: 0.1269
+</pre>
+<img src='images/boxplot_gen_039.png' width='600'><br>
+<h2>Generace 40</h2>
+<img src='images/scatter_gen_040.png' width='600'><br>
+<img src='images/histogram_gen_040.png' width='600'><br>
+<h3>Stabilita mezi generací 39 → 40:</h3>
+<pre>
+  Shluk 3 → 3: 73 jedinců (92.4 %)
+  Shluk 3 → -1: 6 jedinců (7.6 %)
+  Shluk -1 → -1: 8 jedinců (38.1 %)
+  Shluk -1 → 3: 13 jedinců (61.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 39 → 40</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.79, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 39 → 40:</h4>
+<pre>
+ - Shluk 0: 0.1441
+</pre>
+<img src='images/boxplot_gen_040.png' width='600'><br>
+<h2>Generace 41</h2>
+<img src='images/scatter_gen_041.png' width='600'><br>
+<img src='images/histogram_gen_041.png' width='600'><br>
+<h3>Stabilita mezi generací 40 → 41:</h3>
+<pre>
+  Shluk 3 → 3: 79 jedinců (91.9 %)
+  Shluk 3 → -1: 7 jedinců (8.1 %)
+  Shluk -1 → 3: 8 jedinců (57.1 %)
+  Shluk -1 → -1: 6 jedinců (42.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 40 → 41</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.84, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 40 → 41:</h4>
+<pre>
+ - Shluk 0: 0.1155
+</pre>
+<img src='images/boxplot_gen_041.png' width='600'><br>
+<h2>Generace 42</h2>
+<img src='images/scatter_gen_042.png' width='600'><br>
+<img src='images/histogram_gen_042.png' width='600'><br>
+<h3>Stabilita mezi generací 41 → 42:</h3>
+<pre>
+  Shluk 3 → 3: 76 jedinců (87.4 %)
+  Shluk 3 → -1: 11 jedinců (12.6 %)
+  Shluk -1 → 3: 7 jedinců (53.8 %)
+  Shluk -1 → -1: 6 jedinců (46.2 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 41 → 42</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.81, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 41 → 42:</h4>
+<pre>
+ - Shluk 0: 0.0904
+</pre>
+<img src='images/boxplot_gen_042.png' width='600'><br>
+<h2>Generace 43</h2>
+<img src='images/scatter_gen_043.png' width='600'><br>
+<img src='images/histogram_gen_043.png' width='600'><br>
+<h3>Stabilita mezi generací 42 → 43:</h3>
+<pre>
+  Shluk 3 → -1: 16 jedinců (19.3 %)
+  Shluk 3 → 3: 67 jedinců (80.7 %)
+  Shluk -1 → 3: 11 jedinců (64.7 %)
+  Shluk -1 → -1: 6 jedinců (35.3 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 42 → 43</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.71, Overlap: 0.86)
+</pre>
+<h4>Posun centroidů mezi generací 42 → 43:</h4>
+<pre>
+ - Shluk 0: 0.1232
+</pre>
+<img src='images/boxplot_gen_043.png' width='600'><br>
+<h2>Generace 44</h2>
+<img src='images/scatter_gen_044.png' width='600'><br>
+<img src='images/histogram_gen_044.png' width='600'><br>
+<h3>Stabilita mezi generací 43 → 44:</h3>
+<pre>
+  Shluk -1 → -1: 18 jedinců (81.8 %)
+  Shluk -1 → 3: 4 jedinců (18.2 %)
+  Shluk 3 → 3: 65 jedinců (83.3 %)
+  Shluk 3 → -1: 13 jedinců (16.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 43 → 44</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.79, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 43 → 44:</h4>
+<pre>
+ - Shluk 0: 0.0769
+</pre>
+<img src='images/boxplot_gen_044.png' width='600'><br>
+<h2>Generace 45</h2>
+<img src='images/scatter_gen_045.png' width='600'><br>
+<img src='images/histogram_gen_045.png' width='600'><br>
+<h3>Stabilita mezi generací 44 → 45:</h3>
+<pre>
+  Shluk -1 → -1: 23 jedinců (74.2 %)
+  Shluk -1 → 3: 8 jedinců (25.8 %)
+  Shluk 3 → 3: 61 jedinců (88.4 %)
+  Shluk 3 → -1: 8 jedinců (11.6 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 44 → 45</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.79, Overlap: 0.88)
+</pre>
+<h4>Posun centroidů mezi generací 44 → 45:</h4>
+<pre>
+ - Shluk 0: 0.1061
+</pre>
+<img src='images/boxplot_gen_045.png' width='600'><br>
+<h2>Generace 46</h2>
+<img src='images/scatter_gen_046.png' width='600'><br>
+<img src='images/histogram_gen_046.png' width='600'><br>
+<h3>Stabilita mezi generací 45 → 46:</h3>
+<pre>
+  Shluk -1 → -1: 12 jedinců (38.7 %)
+  Shluk -1 → 3: 19 jedinců (61.3 %)
+  Shluk 3 → 3: 63 jedinců (91.3 %)
+  Shluk 3 → -1: 6 jedinců (8.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 45 → 46</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.72, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 45 → 46:</h4>
+<pre>
+ - Shluk 0: 0.1141
+</pre>
+<img src='images/boxplot_gen_046.png' width='600'><br>
+<h2>Generace 47</h2>
+<img src='images/scatter_gen_047.png' width='600'><br>
+<img src='images/histogram_gen_047.png' width='600'><br>
+<h3>Stabilita mezi generací 46 → 47:</h3>
+<pre>
+  Shluk -1 → -1: 10 jedinců (55.6 %)
+  Shluk -1 → 3: 7 jedinců (38.9 %)
+  Shluk -1 → 20: 1 jedinců (5.6 %)
+  Shluk 3 → 3: 50 jedinců (61.0 %)
+  Shluk 3 → -1: 28 jedinců (34.1 %)
+  Shluk 3 → 20: 4 jedinců (4.9 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 46 → 47</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.56, Overlap: 0.88)
+</pre>
+<h4>Posun centroidů mezi generací 46 → 47:</h4>
+<pre>
+ - Shluk 0: 0.1588
+</pre>
+<img src='images/boxplot_gen_047.png' width='600'><br>
+<h2>Generace 48</h2>
+<img src='images/scatter_gen_048.png' width='600'><br>
+<img src='images/histogram_gen_048.png' width='600'><br>
+<h3>Stabilita mezi generací 47 → 48:</h3>
+<pre>
+  Shluk -1 → -1: 22 jedinců (57.9 %)
+  Shluk -1 → 3: 16 jedinců (42.1 %)
+  Shluk 3 → 3: 56 jedinců (98.2 %)
+  Shluk 3 → -1: 1 jedinců (1.8 %)
+  Shluk 20 → 3: 5 jedinců (100.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 47 → 48</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.72, Overlap: 0.98)
+ - Shluk 20 → 3 (Jaccard: 0.06, Overlap: 1.00)
+</pre>
+<h4>Posun centroidů mezi generací 47 → 48:</h4>
+<pre>
+ - Shluk 0: 0.0727
+</pre>
+<img src='images/boxplot_gen_048.png' width='600'><br>
+<h2>Generace 49</h2>
+<img src='images/scatter_gen_049.png' width='600'><br>
+<img src='images/histogram_gen_049.png' width='600'><br>
+<h3>Stabilita mezi generací 48 → 49:</h3>
+<pre>
+  Shluk -1 → -1: 12 jedinců (52.2 %)
+  Shluk -1 → 3: 11 jedinců (47.8 %)
+  Shluk 3 → 3: 60 jedinců (77.9 %)
+  Shluk 3 → -1: 17 jedinců (22.1 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 48 → 49</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.68, Overlap: 0.85)
+</pre>
+<h4>Posun centroidů mezi generací 48 → 49:</h4>
+<pre>
+ - Shluk 0: 0.1166
+</pre>
+<img src='images/boxplot_gen_049.png' width='600'><br>
+<h2>Generace 50</h2>
+<img src='images/scatter_gen_050.png' width='600'><br>
+<img src='images/histogram_gen_050.png' width='600'><br>
+<h3>Stabilita mezi generací 49 → 50:</h3>
+<pre>
+  Shluk -1 → -1: 18 jedinců (62.1 %)
+  Shluk -1 → 21: 2 jedinců (6.9 %)
+  Shluk -1 → 3: 9 jedinců (31.0 %)
+  Shluk 3 → 3: 38 jedinců (53.5 %)
+  Shluk 3 → -1: 30 jedinců (42.3 %)
+  Shluk 3 → 21: 3 jedinců (4.2 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 49 → 50</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.47, Overlap: 0.81)
+</pre>
+<h4>Posun centroidů mezi generací 49 → 50:</h4>
+<pre>
+ - Shluk 0: 0.1724
+</pre>
+<img src='images/boxplot_gen_050.png' width='600'><br>
+<h2>Generace 51</h2>
+<img src='images/scatter_gen_051.png' width='600'><br>
+<img src='images/histogram_gen_051.png' width='600'><br>
+<h3>Stabilita mezi generací 50 → 51:</h3>
+<pre>
+  Shluk -1 → -1: 25 jedinců (52.1 %)
+  Shluk -1 → 3: 19 jedinců (39.6 %)
+  Shluk -1 → 21: 4 jedinců (8.3 %)
+  Shluk 3 → 3: 43 jedinců (91.5 %)
+  Shluk 3 → -1: 3 jedinců (6.4 %)
+  Shluk 3 → 21: 1 jedinců (2.1 %)
+  Shluk 21 → -1: 2 jedinců (40.0 %)
+  Shluk 21 → 21: 3 jedinců (60.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 50 → 51</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.65, Overlap: 0.91)
+ - Shluk 21 → 21 (Jaccard: 0.30, Overlap: 0.60)
+</pre>
+<h4>Posun centroidů mezi generací 50 → 51:</h4>
+<pre>
+ - Shluk 0: 0.0970
+ - Shluk 1: 0.5233
+</pre>
+<img src='images/boxplot_gen_051.png' width='600'><br>
+<h2>Generace 52</h2>
+<img src='images/scatter_gen_052.png' width='600'><br>
+<img src='images/histogram_gen_052.png' width='600'><br>
+<h3>Stabilita mezi generací 51 → 52:</h3>
+<pre>
+  Shluk -1 → -1: 24 jedinců (80.0 %)
+  Shluk -1 → 3: 6 jedinců (20.0 %)
+  Shluk 3 → -1: 20 jedinců (32.3 %)
+  Shluk 3 → 3: 42 jedinců (67.7 %)
+  Shluk 21 → -1: 4 jedinců (50.0 %)
+  Shluk 21 → 3: 4 jedinců (50.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 51 → 52</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.58, Overlap: 0.81)
+ - Shluk 21 → 3 (Jaccard: 0.07, Overlap: 0.50)
+</pre>
+<h4>Posun centroidů mezi generací 51 → 52:</h4>
+<pre>
+ - Shluk 0: 0.0839
+</pre>
+<img src='images/boxplot_gen_052.png' width='600'><br>
+<h2>Generace 53</h2>
+<img src='images/scatter_gen_053.png' width='600'><br>
+<img src='images/histogram_gen_053.png' width='600'><br>
+<h3>Stabilita mezi generací 52 → 53:</h3>
+<pre>
+  Shluk -1 → -1: 13 jedinců (27.1 %)
+  Shluk -1 → 3: 35 jedinců (72.9 %)
+  Shluk 3 → 3: 49 jedinců (94.2 %)
+  Shluk 3 → -1: 3 jedinců (5.8 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 52 → 53</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.56, Overlap: 0.94)
+</pre>
+<h4>Posun centroidů mezi generací 52 → 53:</h4>
+<pre>
+ - Shluk 0: 0.1374
+</pre>
+<img src='images/boxplot_gen_053.png' width='600'><br>
+<h2>Generace 54</h2>
+<img src='images/scatter_gen_054.png' width='600'><br>
+<img src='images/histogram_gen_054.png' width='600'><br>
+<h3>Stabilita mezi generací 53 → 54:</h3>
+<pre>
+  Shluk -1 → -1: 12 jedinců (75.0 %)
+  Shluk -1 → 3: 4 jedinců (25.0 %)
+  Shluk 3 → -1: 15 jedinců (17.9 %)
+  Shluk 3 → 3: 69 jedinců (82.1 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 53 → 54</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.78, Overlap: 0.95)
+</pre>
+<h4>Posun centroidů mezi generací 53 → 54:</h4>
+<pre>
+ - Shluk 0: 0.0566
+</pre>
+<img src='images/boxplot_gen_054.png' width='600'><br>
+<h2>Generace 55</h2>
+<img src='images/scatter_gen_055.png' width='600'><br>
+<img src='images/histogram_gen_055.png' width='600'><br>
+<h3>Stabilita mezi generací 54 → 55:</h3>
+<pre>
+  Shluk -1 → -1: 20 jedinců (74.1 %)
+  Shluk -1 → 3: 7 jedinců (25.9 %)
+  Shluk 3 → 3: 54 jedinců (74.0 %)
+  Shluk 3 → -1: 19 jedinců (26.0 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 54 → 55</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.68, Overlap: 0.89)
+</pre>
+<h4>Posun centroidů mezi generací 54 → 55:</h4>
+<pre>
+ - Shluk 0: 0.0653
+</pre>
+<img src='images/boxplot_gen_055.png' width='600'><br>
+<h2>Generace 56</h2>
+<img src='images/scatter_gen_056.png' width='600'><br>
+<img src='images/histogram_gen_056.png' width='600'><br>
+<h3>Stabilita mezi generací 55 → 56:</h3>
+<pre>
+  Shluk -1 → -1: 20 jedinců (51.3 %)
+  Shluk -1 → 3: 19 jedinců (48.7 %)
+  Shluk 3 → 3: 53 jedinců (86.9 %)
+  Shluk 3 → -1: 8 jedinců (13.1 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 55 → 56</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.66, Overlap: 0.87)
+</pre>
+<h4>Posun centroidů mezi generací 55 → 56:</h4>
+<pre>
+ - Shluk 0: 0.0845
+</pre>
+<img src='images/boxplot_gen_056.png' width='600'><br>
+<h2>Generace 57</h2>
+<img src='images/scatter_gen_057.png' width='600'><br>
+<img src='images/histogram_gen_057.png' width='600'><br>
+<h3>Stabilita mezi generací 56 → 57:</h3>
+<pre>
+  Shluk -1 → 3: 17 jedinců (60.7 %)
+  Shluk -1 → -1: 11 jedinců (39.3 %)
+  Shluk 3 → 3: 66 jedinců (91.7 %)
+  Shluk 3 → -1: 6 jedinců (8.3 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 56 → 57</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.74, Overlap: 0.92)
+</pre>
+<h4>Posun centroidů mezi generací 56 → 57:</h4>
+<pre>
+ - Shluk 0: 0.0591
+</pre>
+<img src='images/boxplot_gen_057.png' width='600'><br>
+<h2>Generace 58</h2>
+<img src='images/scatter_gen_058.png' width='600'><br>
+<img src='images/histogram_gen_058.png' width='600'><br>
+<h3>Stabilita mezi generací 57 → 58:</h3>
+<pre>
+  Shluk 3 → 3: 67 jedinců (80.7 %)
+  Shluk 3 → -1: 16 jedinců (19.3 %)
+  Shluk -1 → 3: 9 jedinců (52.9 %)
+  Shluk -1 → -1: 8 jedinců (47.1 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 57 → 58</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.73, Overlap: 0.88)
+</pre>
+<h4>Posun centroidů mezi generací 57 → 58:</h4>
+<pre>
+ - Shluk 0: 0.0623
+</pre>
+<img src='images/boxplot_gen_058.png' width='600'><br>
+<h2>Generace 59</h2>
+<img src='images/scatter_gen_059.png' width='600'><br>
+<img src='images/histogram_gen_059.png' width='600'><br>
+<h3>Stabilita mezi generací 58 → 59:</h3>
+<pre>
+  Shluk 3 → -1: 7 jedinců (9.2 %)
+  Shluk 3 → 3: 69 jedinců (90.8 %)
+  Shluk -1 → 3: 14 jedinců (58.3 %)
+  Shluk -1 → -1: 10 jedinců (41.7 %)
+</pre>
+<h3>Jaccardovo mapování a overlap: Generace 58 → 59</h3>
+<pre>
+ - Shluk 3 → 3 (Jaccard: 0.77, Overlap: 0.91)
+</pre>
+<h4>Posun centroidů mezi generací 58 → 59:</h4>
+<pre>
+ - Shluk 0: 0.0279
+</pre>
+<img src='images/boxplot_gen_059.png' width='600'><br>
+<img src='images/time_cluster_gen_059.png' width='600'><br>
+<img src='images/size_cluster_gen_059.png' width='1200'><br>
+<img src='images/Size_cluster_heatmap_gen_059.png' width='1200'><br>
+<img src='images/distance_centroid_gen_059.png' width='600'><br>
+<img src='images/wcss_gen_059.png' width='600'><br>
